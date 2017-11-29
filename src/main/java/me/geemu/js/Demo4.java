@@ -20,8 +20,7 @@ public class Demo4 {
         engine.eval(reader);
         if (engine instanceof Invocable) {
             Invocable invoke = (Invocable) engine;
-            Double c = (Double) invoke.invokeFunction("my_getEncPass", "8814372", "aaaa1111", "!BMI");
-            System.out.println("c = " + c);
+            String a = invoke.invokeFunction("jiami2", "8814372", "aaaa1111", "!JUC").toString();
         }
         reader.close();
     }
